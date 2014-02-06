@@ -6044,10 +6044,12 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="L1" library="inductors" deviceset="BLM15H" device="" technology="B121SN1" value="30Z"/>
+<part name="C5" library="resistor" deviceset="C-EU" device="C0402" value="1uF"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="-35.56" y="60.96" size="5.08" layer="91">USB</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="96.52" y="83.82"/>
@@ -6068,8 +6070,9 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <instance part="R3" gate="G$1" x="-12.7" y="45.72"/>
 <instance part="R4" gate="G$1" x="-12.7" y="38.1"/>
 <instance part="P+2" gate="1" x="2.54" y="58.42"/>
-<instance part="GND6" gate="1" x="0" y="12.7"/>
-<instance part="L1" gate="G$1" x="0" y="22.86" rot="R270"/>
+<instance part="GND6" gate="1" x="-12.7" y="12.7"/>
+<instance part="L1" gate="G$1" x="-12.7" y="22.86" rot="R270"/>
+<instance part="C5" gate="G$1" x="2.54" y="22.86" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -6164,7 +6167,7 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="0" y1="15.24" x2="0" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="15.24" x2="-12.7" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -6247,6 +6250,11 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <wire x1="71.12" y1="63.5" x2="66.04" y2="63.5" width="0.1524" layer="91"/>
 <label x="58.42" y="63.5" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="22.86" x2="10.16" y2="22.86" width="0.1524" layer="91"/>
+<label x="10.16" y="22.86" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="UGND" class="0">
 <segment>
@@ -6256,11 +6264,17 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 </segment>
 <segment>
 <pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="0" y1="27.94" x2="0" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="0" y1="30.48" x2="-27.94" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="0" y1="30.48" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="27.94" x2="-12.7" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="30.48" x2="-27.94" y2="30.48" width="0.1524" layer="91"/>
 <label x="-27.94" y="30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 <label x="2.54" y="30.48" size="1.778" layer="95"/>
+<wire x1="-12.7" y1="30.48" x2="-5.08" y2="30.48" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="30.48" x2="2.54" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="22.86" x2="-5.08" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="22.86" x2="-5.08" y2="30.48" width="0.1524" layer="91"/>
+<junction x="-12.7" y="30.48"/>
+<junction x="-5.08" y="30.48"/>
 </segment>
 </net>
 <net name="D+" class="0">

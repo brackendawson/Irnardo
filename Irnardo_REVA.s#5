@@ -7917,13 +7917,6 @@ Source: www.kingbright.com</description>
 <wire x1="198.12" y1="96.52" x2="218.44" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="IRIN" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="OUT"/>
-<wire x1="218.44" y1="93.98" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
-<label x="208.28" y="93.98" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="IO13" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(ICP3/CLK0/OC4A)PC7"/>
@@ -7960,6 +7953,18 @@ Source: www.kingbright.com</description>
 <pinref part="D2" gate="G$1" pin="A"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="210.82" y1="60.96" x2="203.2" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="IO8" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="(ADC11/PCINT4)PB4"/>
+<wire x1="137.16" y1="99.06" x2="147.32" y2="99.06" width="0.1524" layer="91"/>
+<label x="147.32" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="OUT"/>
+<wire x1="218.44" y1="93.98" x2="213.36" y2="93.98" width="0.1524" layer="91"/>
+<label x="208.28" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

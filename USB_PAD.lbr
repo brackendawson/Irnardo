@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -56,52 +56,44 @@
 </layers>
 <library>
 <packages>
-<package name="6X2005IN">
-<wire x1="-2" y1="2" x2="-2" y2="-0.73" width="0.127" layer="51"/>
-<wire x1="-2" y1="-0.73" x2="2" y2="-0.73" width="0.127" layer="51"/>
-<wire x1="2" y1="-0.73" x2="2" y2="2" width="0.127" layer="51"/>
-<wire x1="2" y1="2" x2="-2" y2="2" width="0.127" layer="51"/>
-<circle x="-2" y="-1.23" radius="0.1" width="0.127" layer="51"/>
-<text x="-2.53" y="2.95" size="1.27" layer="25">&gt;Name</text>
-<text x="-2.47" y="-2.92" size="1.27" layer="27">&gt;Name</text>
-<pad name="2" x="-1.27" y="1.27" drill="0.65" diameter="0.8128" shape="octagon" rot="R90"/>
-<pad name="4" x="0" y="1.27" drill="0.65" diameter="0.8128" shape="octagon" rot="R90"/>
-<pad name="6" x="1.27" y="1.27" drill="0.65" diameter="0.8128" shape="octagon" rot="R90"/>
-<pad name="5" x="1.27" y="0" drill="0.65" diameter="0.8128" shape="octagon" rot="R270"/>
-<pad name="3" x="0" y="0" drill="0.65" diameter="0.8128" shape="octagon" rot="R270"/>
-<pad name="1" x="-1.27" y="0" drill="0.65" diameter="0.8128" shape="octagon" rot="R270"/>
+<package name="USB_PAD">
+<smd name="V+" x="3.5" y="5.5" dx="1" dy="9" layer="1"/>
+<smd name="D-" x="1" y="6" dx="1" dy="8" layer="1"/>
+<smd name="D+" x="-1" y="6" dx="1" dy="8" layer="1"/>
+<smd name="V-" x="-3.5" y="5.5" dx="1" dy="9" layer="1" rot="R180"/>
+<wire x1="6" y1="0" x2="6" y2="10" width="0.127" layer="21"/>
+<wire x1="6" y1="0" x2="-6" y2="0" width="0.127" layer="21"/>
+<wire x1="-6" y1="0" x2="-6" y2="10" width="0.127" layer="21"/>
+<text x="-6" y="10.5" size="1.27" layer="25">&gt;Name</text>
+<text x="-6" y="-1.5" size="1.27" layer="27">&gt;Value</text>
 </package>
 </packages>
 <symbols>
-<symbol name="6X2005IN">
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<pin name="1" x="-10.16" y="2.54" length="middle"/>
-<pin name="3" x="-10.16" y="0" length="middle"/>
-<pin name="5" x="-10.16" y="-2.54" length="middle"/>
-<pin name="6" x="10.16" y="-2.54" length="middle" rot="R180"/>
-<pin name="4" x="10.16" y="0" length="middle" rot="R180"/>
-<pin name="2" x="10.16" y="2.54" length="middle" rot="R180"/>
-<text x="-4.572" y="5.842" size="1.778" layer="94">&gt;Name</text>
-<text x="-5.08" y="-7.62" size="1.778" layer="94">&gt;Value</text>
+<symbol name="USB_PAD">
+<wire x1="5.08" y1="12.7" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<pin name="V+" x="12.7" y="10.16" rot="R180"/>
+<pin name="D-" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="D+" x="10.16" y="-5.08" length="middle" rot="R180"/>
+<pin name="V-" x="12.7" y="-12.7" rot="R180"/>
+<text x="-4.318" y="13.462" size="1.27" layer="95">&gt;Name</text>
+<text x="-4.318" y="-17.272" size="1.27" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="6X2005IN">
+<deviceset name="USB_PAD">
 <gates>
-<gate name="G$1" symbol="6X2005IN" x="0" y="0"/>
+<gate name="G$1" symbol="USB_PAD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="6X2005IN">
+<device name="" package="USB_PAD">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="D+" pad="D+"/>
+<connect gate="G$1" pin="D-" pad="D-"/>
+<connect gate="G$1" pin="V+" pad="V+"/>
+<connect gate="G$1" pin="V-" pad="V-"/>
 </connects>
 <technologies>
 <technology name=""/>

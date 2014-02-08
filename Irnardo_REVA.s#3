@@ -7577,10 +7577,10 @@ Source: www.kingbright.com</description>
 <library name="USB_PAD">
 <packages>
 <package name="USB_PAD">
-<smd name="V+" x="-3.5" y="5.5" dx="1" dy="9" layer="1"/>
-<smd name="D-" x="-1" y="6" dx="1" dy="8" layer="1"/>
-<smd name="D+" x="1" y="6" dx="1" dy="8" layer="1"/>
-<smd name="V-" x="3.5" y="5.5" dx="1" dy="9" layer="1" rot="R180"/>
+<smd name="V+" x="3.5" y="5.5" dx="1" dy="9" layer="1"/>
+<smd name="D-" x="1" y="6" dx="1" dy="8" layer="1"/>
+<smd name="D+" x="-1" y="6" dx="1" dy="8" layer="1"/>
+<smd name="V-" x="-3.5" y="5.5" dx="1" dy="9" layer="1" rot="R180"/>
 <wire x1="6" y1="0" x2="6" y2="10" width="0.127" layer="21"/>
 <wire x1="6" y1="0" x2="-6" y2="0" width="0.127" layer="21"/>
 <wire x1="-6" y1="0" x2="-6" y2="10" width="0.127" layer="21"/>

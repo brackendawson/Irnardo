@@ -91,7 +91,9 @@
 <devices>
 <device name="" package="TSOP755">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="U" value="TSOP755" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

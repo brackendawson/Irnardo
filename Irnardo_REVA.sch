@@ -7681,7 +7681,7 @@ Source: www.kingbright.com</description>
 <text x="155.194" y="74.93" size="1.778" layer="97">USB Boot En</text>
 <text x="-33.02" y="132.08" size="5.08" layer="91">REVA</text>
 <text x="167.64" y="-12.7" size="5.08" layer="91">© 2014 - Bracken Dawson</text>
-<text x="175.26" y="40.64" size="5.08" layer="91">ICSP</text>
+<text x="175.26" y="38.1" size="5.08" layer="91">ICSP</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="101.6" y="83.82"/>
@@ -7898,8 +7898,8 @@ Source: www.kingbright.com</description>
 <label x="55.88" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="185.42" y1="22.86" x2="175.26" y2="22.86" width="0.1524" layer="91"/>
-<label x="165.1" y="22.86" size="1.778" layer="95"/>
+<wire x1="172.72" y1="22.86" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
+<label x="152.4" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -8062,8 +8062,8 @@ Source: www.kingbright.com</description>
 <label x="147.32" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="185.42" y1="27.94" x2="175.26" y2="27.94" width="0.1524" layer="91"/>
-<label x="167.64" y="27.94" size="1.778" layer="95"/>
+<wire x1="172.72" y1="27.94" x2="162.56" y2="27.94" width="0.1524" layer="91"/>
+<label x="154.94" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -8073,8 +8073,8 @@ Source: www.kingbright.com</description>
 <label x="147.32" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="185.42" y1="25.4" x2="175.26" y2="25.4" width="0.1524" layer="91"/>
-<label x="167.64" y="25.4" size="1.778" layer="95"/>
+<wire x1="172.72" y1="25.4" x2="162.56" y2="25.4" width="0.1524" layer="91"/>
+<label x="154.94" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">

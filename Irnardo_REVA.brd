@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,16 +9,16 @@
 <grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -32,8 +32,8 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
@@ -1621,9 +1621,9 @@ design rules under a new name.</description>
 <attribute name="U" value="TSOP755" x="39.45" y="11.35" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-0.17" y="17.45" size="1.27" layer="21"/>
 </element>
-<element name="C6" library="resistor" package="C0402" value="100n" x="1.26" y="12.47" smashed="yes" rot="R90">
-<attribute name="NAME" x="-2.252" y="11.835" size="1.27" layer="25" rot="R90"/>
-<attribute name="VALUE" x="3.165" y="11.835" size="1.27" layer="27" rot="R90"/>
+<element name="C6" library="resistor" package="C0402" value="100n" x="1.24" y="12.43" smashed="yes" rot="R270">
+<attribute name="NAME" x="-3.498" y="13.815" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="-0.665" y="13.065" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R5" library="resistor" package="R0402" value="100R" x="2.54" y="12.42" smashed="yes" rot="R90">
 <attribute name="NAME" x="-0.722" y="11.785" size="1.27" layer="25" rot="R90"/>
@@ -1673,7 +1673,6 @@ design rules under a new name.</description>
 <contactref element="U1" pad="7"/>
 <contactref element="C7" pad="1"/>
 <contactref element="R5" pad="1"/>
-<contactref element="C6" pad="1"/>
 <contactref element="J1" pad="V+"/>
 <wire x1="11.11" y1="10.42" x2="10.84" y2="10.15" width="0.254" layer="1"/>
 <wire x1="10.84" y1="10.15" x2="10.5" y2="10.15" width="0.254" layer="1"/>
@@ -1688,7 +1687,6 @@ design rules under a new name.</description>
 <wire x1="3.57" y1="11.47" x2="2.5" y2="10.4" width="0.254" layer="1"/>
 <wire x1="2.54" y1="11.77" x2="2.54" y2="10.44" width="0.254" layer="1"/>
 <wire x1="2.54" y1="10.44" x2="2.5" y2="10.4" width="0.254" layer="1"/>
-<wire x1="1.26" y1="11.82" x2="2.49" y2="11.82" width="0.254" layer="1"/>
 <wire x1="2.49" y1="11.82" x2="2.54" y2="11.77" width="0.254" layer="1"/>
 <wire x1="4.03" y1="7.55" x2="4.03" y2="7.64" width="0.254" layer="1"/>
 <wire x1="4.03" y1="7.64" x2="2.99" y2="8.68" width="0.254" layer="1"/>
@@ -1734,7 +1732,6 @@ design rules under a new name.</description>
 <contactref element="X1" pad="2"/>
 <contactref element="C4" pad="2"/>
 <contactref element="L1" pad="2"/>
-<contactref element="C6" pad="2"/>
 <contactref element="U2" pad="1"/>
 <contactref element="U2" pad="4"/>
 <contactref element="D1" pad="C"/>
@@ -1766,7 +1763,6 @@ design rules under a new name.</description>
 <wire x1="5.6" y1="2.75" x2="5.6" y2="3.55" width="0.254" layer="1"/>
 <wire x1="5.6" y1="3.55" x2="8.1" y2="6.05" width="0.254" layer="1"/>
 <wire x1="2.635" y1="5.29" x2="0.785" y2="2.99" width="0.254" layer="1"/>
-<wire x1="1.26" y1="13.12" x2="1.26" y2="15.07" width="0.254" layer="1"/>
 <wire x1="1.26" y1="15.07" x2="1.35" y2="15.16" width="0.254" layer="1"/>
 <wire x1="9.46" y1="16.34" x2="9.46" y2="15.29" width="0.254" layer="1"/>
 <wire x1="9.46" y1="15.29" x2="9.75" y2="15" width="0.254" layer="1"/>
@@ -1797,6 +1793,7 @@ design rules under a new name.</description>
 <wire x1="11.11" y1="12.24" x2="11.11" y2="11.72" width="0.254" layer="1"/>
 <wire x1="9.25" y1="14.3" x2="9.75" y2="14.8" width="0.254" layer="1"/>
 <wire x1="9.75" y1="14.8" x2="9.75" y2="15" width="0.254" layer="1"/>
+<contactref element="C6" pad="2"/>
 </signal>
 <signal name="RESET">
 <contactref element="U1" pad="13"/>
@@ -1900,6 +1897,9 @@ design rules under a new name.</description>
 <contactref element="U2" pad="2"/>
 <wire x1="2.54" y1="13.07" x2="2.54" y2="15.08" width="0.254" layer="1"/>
 <wire x1="2.54" y1="15.08" x2="2.62" y2="15.16" width="0.254" layer="1"/>
+<contactref element="C6" pad="1"/>
+<wire x1="1.24" y1="13.08" x2="2.54" y2="13.08" width="0.254" layer="1"/>
+<wire x1="2.54" y1="13.08" x2="2.54" y2="13.07" width="0.254" layer="1"/>
 </signal>
 <signal name="IO13">
 <contactref element="U1" pad="32"/>

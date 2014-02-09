@@ -112,6 +112,7 @@
 <wire x1="10.88196875" y1="17" x2="1.11803125" y2="17" width="0" layer="20"/>
 <wire x1="1.11803125" y1="17" x2="0" y2="15.88196875" width="0" layer="20" curve="90"/>
 <wire x1="0" y1="15.88196875" x2="0" y2="0.5" width="0" layer="20"/>
+<text x="5.25" y="14.75" size="1.27" layer="16" font="vector" rot="MR0">REVA</text>
 </plain>
 <libraries>
 <library name="Arduino_Leonardo-REV3b">

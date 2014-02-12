@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7655,7 +7655,6 @@ Source: www.kingbright.com</description>
 <part name="U2" library="TSOP755" deviceset="TSOP755" device=""/>
 <part name="C6" library="resistor" deviceset="C-EU" device="C0402" value="100n"/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
-<part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="R5" library="resistor" deviceset="R-EU_" device="R0402" value="100R"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="resistor" deviceset="R-EU_" device="R0402"/>
@@ -7705,11 +7704,10 @@ Source: www.kingbright.com</description>
 <instance part="L1" gate="G$1" x="-12.7" y="22.86" rot="R270"/>
 <instance part="C5" gate="G$1" x="2.54" y="22.86" rot="R270"/>
 <instance part="U2" gate="G$1" x="231.14" y="88.9"/>
-<instance part="C6" gate="G$1" x="182.88" y="91.44"/>
-<instance part="P+4" gate="1" x="182.88" y="106.68"/>
-<instance part="GND7" gate="1" x="182.88" y="81.28"/>
-<instance part="R5" gate="G$1" x="193.04" y="96.52"/>
-<instance part="GND8" gate="1" x="203.2" y="86.36"/>
+<instance part="C6" gate="G$1" x="193.04" y="91.44"/>
+<instance part="P+4" gate="1" x="175.26" y="106.68"/>
+<instance part="R5" gate="G$1" x="182.88" y="96.52"/>
+<instance part="GND8" gate="1" x="203.2" y="78.74"/>
 <instance part="R6" gate="G$1" x="198.12" y="71.12"/>
 <instance part="D1" gate="G$1" x="213.36" y="71.12" rot="R90"/>
 <instance part="GND9" gate="1" x="231.14" y="71.12" rot="R90"/>
@@ -7771,12 +7769,9 @@ Source: www.kingbright.com</description>
 </segment>
 <segment>
 <pinref part="P+4" gate="1" pin="+5V"/>
-<wire x1="182.88" y1="104.14" x2="182.88" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="104.14" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="96.52" x2="177.8" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="96.52" x2="187.96" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="93.98" x2="182.88" y2="96.52" width="0.1524" layer="91"/>
-<junction x="182.88" y="96.52"/>
 </segment>
 <segment>
 <pinref part="P+5" gate="1" pin="+5V"/>
@@ -7846,19 +7841,19 @@ Source: www.kingbright.com</description>
 <wire x1="-12.7" y1="15.24" x2="-12.7" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="182.88" y1="83.82" x2="182.88" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U2" gate="G$1" pin="GND1"/>
 <wire x1="218.44" y1="99.06" x2="203.2" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="99.06" x2="203.2" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="GND2"/>
 <wire x1="203.2" y1="91.44" x2="218.44" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="91.44" x2="203.2" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="91.44" x2="203.2" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <junction x="203.2" y="91.44"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="83.82" x2="203.2" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="86.36" x2="193.04" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="83.82" x2="203.2" y2="83.82" width="0.1524" layer="91"/>
+<junction x="203.2" y="83.82"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
@@ -8002,7 +7997,11 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="U2" gate="G$1" pin="VS"/>
-<wire x1="198.12" y1="96.52" x2="218.44" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="96.52" x2="193.04" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="96.52" x2="218.44" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="93.98" x2="193.04" y2="96.52" width="0.1524" layer="91"/>
+<junction x="193.04" y="96.52"/>
 </segment>
 </net>
 <net name="IO13" class="0">

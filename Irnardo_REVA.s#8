@@ -7577,10 +7577,10 @@ Source: www.kingbright.com</description>
 <library name="USB_PAD">
 <packages>
 <package name="USB_PAD">
-<smd name="V+" x="-3.5" y="5.5" dx="1" dy="9" layer="1"/>
-<smd name="D-" x="-1" y="6" dx="1" dy="8" layer="1"/>
-<smd name="D+" x="1" y="6" dx="1" dy="8" layer="1"/>
-<smd name="V-" x="3.5" y="5.5" dx="1" dy="9" layer="1" rot="R180"/>
+<smd name="V+" x="3.5" y="5.5" dx="1" dy="9" layer="1"/>
+<smd name="D-" x="1" y="6" dx="1" dy="8" layer="1"/>
+<smd name="D+" x="-1" y="6" dx="1" dy="8" layer="1"/>
+<smd name="V-" x="-3.5" y="5.5" dx="1" dy="9" layer="1" rot="R180"/>
 <wire x1="6" y1="0" x2="6" y2="10" width="0.127" layer="21"/>
 <wire x1="6" y1="0" x2="-6" y2="0" width="0.127" layer="21"/>
 <wire x1="-6" y1="0" x2="-6" y2="10" width="0.127" layer="21"/>
@@ -7671,7 +7671,7 @@ Source: www.kingbright.com</description>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="U$1" library="USB_PAD" deviceset="USB_PAD" device=""/>
+<part name="J1" library="USB_PAD" deviceset="USB_PAD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7724,7 +7724,7 @@ Source: www.kingbright.com</description>
 <instance part="GND12" gate="1" x="22.86" y="53.34" rot="R90"/>
 <instance part="P+5" gate="1" x="215.9" y="38.1"/>
 <instance part="GND13" gate="1" x="215.9" y="12.7"/>
-<instance part="U$1" gate="G$1" x="-33.02" y="43.18"/>
+<instance part="J1" gate="G$1" x="-33.02" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -7770,7 +7770,7 @@ Source: www.kingbright.com</description>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="2.54" y1="53.34" x2="7.62" y2="53.34" width="0.1524" layer="91"/>
 <junction x="2.54" y="53.34"/>
-<pinref part="U$1" gate="G$1" pin="V+"/>
+<pinref part="J1" gate="G$1" pin="V+"/>
 </segment>
 <segment>
 <pinref part="P+4" gate="1" pin="+5V"/>
@@ -7984,21 +7984,21 @@ Source: www.kingbright.com</description>
 <wire x1="-5.08" y1="22.86" x2="-5.08" y2="30.48" width="0.1524" layer="91"/>
 <junction x="-12.7" y="30.48"/>
 <junction x="-5.08" y="30.48"/>
-<pinref part="U$1" gate="G$1" pin="V-"/>
+<pinref part="J1" gate="G$1" pin="V-"/>
 </segment>
 </net>
 <net name="D+" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="-17.78" y1="38.1" x2="-22.86" y2="38.1" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="D+"/>
+<pinref part="J1" gate="G$1" pin="D+"/>
 </segment>
 </net>
 <net name="D-" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="-17.78" y1="45.72" x2="-22.86" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="D-"/>
+<pinref part="J1" gate="G$1" pin="D-"/>
 </segment>
 </net>
 <net name="N$5" class="0">

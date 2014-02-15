@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7745,8 +7745,6 @@ Source: Epson Toyocom</description>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="C7" library="resistor" deviceset="C-EU" device="C0402" value="100n"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="P+5" library="supply1" deviceset="+5V" device=""/>
-<part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="USB_PAD" deviceset="USB_PAD" device=""/>
 <part name="Q1" library="crystal" deviceset="FA-" device="20H"/>
 </parts>
@@ -7760,7 +7758,6 @@ Source: Epson Toyocom</description>
 <text x="155.194" y="74.93" size="1.778" layer="97">USB Boot En</text>
 <text x="-33.02" y="132.08" size="5.08" layer="91">REVA</text>
 <text x="167.64" y="-12.7" size="5.08" layer="91">© 2014 - Bracken Dawson</text>
-<text x="175.26" y="38.1" size="5.08" layer="91">ICSP</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="101.6" y="83.82"/>
@@ -7796,8 +7793,6 @@ Source: Epson Toyocom</description>
 <instance part="GND11" gate="1" x="170.18" y="71.12" rot="R90"/>
 <instance part="C7" gate="G$1" x="10.16" y="53.34" rot="R90"/>
 <instance part="GND12" gate="1" x="22.86" y="53.34" rot="R90"/>
-<instance part="P+5" gate="1" x="215.9" y="38.1"/>
-<instance part="GND13" gate="1" x="215.9" y="12.7"/>
 <instance part="J1" gate="G$1" x="-33.02" y="43.18"/>
 <instance part="Q1" gate="G$1" x="33.02" y="88.9"/>
 </instances>
@@ -7852,11 +7847,6 @@ Source: Epson Toyocom</description>
 <wire x1="175.26" y1="104.14" x2="175.26" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="96.52" x2="177.8" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="P+5" gate="1" pin="+5V"/>
-<wire x1="203.2" y1="27.94" x2="215.9" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="27.94" x2="215.9" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7939,11 +7929,6 @@ Source: Epson Toyocom</description>
 <wire x1="15.24" y1="53.34" x2="20.32" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="203.2" y1="22.86" x2="215.9" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="215.9" y1="22.86" x2="215.9" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U1" gate="G$1" pin="GND3"/>
 <wire x1="76.2" y1="104.14" x2="25.4" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -7968,10 +7953,6 @@ Source: Epson Toyocom</description>
 <wire x1="71.12" y1="101.6" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
 <junction x="71.12" y="101.6"/>
 <label x="55.88" y="101.6" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="172.72" y1="22.86" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
-<label x="152.4" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RD-" class="0">
@@ -8112,10 +8093,6 @@ Source: Epson Toyocom</description>
 <wire x1="137.16" y1="96.52" x2="147.32" y2="96.52" width="0.1524" layer="91"/>
 <label x="147.32" y="96.52" size="1.778" layer="95"/>
 </segment>
-<segment>
-<wire x1="172.72" y1="27.94" x2="162.56" y2="27.94" width="0.1524" layer="91"/>
-<label x="154.94" y="27.94" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SCK" class="0">
 <segment>
@@ -8123,20 +8100,12 @@ Source: Epson Toyocom</description>
 <wire x1="137.16" y1="91.44" x2="147.32" y2="91.44" width="0.1524" layer="91"/>
 <label x="147.32" y="91.44" size="1.778" layer="95"/>
 </segment>
-<segment>
-<wire x1="172.72" y1="25.4" x2="162.56" y2="25.4" width="0.1524" layer="91"/>
-<label x="154.94" y="25.4" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="(PDI/MOSI/PCINT2)PB2"/>
 <wire x1="137.16" y1="93.98" x2="147.32" y2="93.98" width="0.1524" layer="91"/>
 <label x="147.32" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="203.2" y1="25.4" x2="215.9" y2="25.4" width="0.1524" layer="91"/>
-<label x="215.9" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">

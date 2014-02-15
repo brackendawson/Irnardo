@@ -8376,7 +8376,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="155.194" y="74.93" size="1.778" layer="97">USB Boot En</text>
 <text x="-33.02" y="132.08" size="5.08" layer="91">REVA</text>
 <text x="167.64" y="-12.7" size="5.08" layer="91">© 2014 - Bracken Dawson</text>
-<text x="175.26" y="40.64" size="5.08" layer="91">ICSP</text>
+<text x="175.26" y="38.1" size="5.08" layer="91">ICSP</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="101.6" y="83.82"/>
@@ -8417,9 +8417,18 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="P+5" gate="1" x="215.9" y="38.1"/>
 <instance part="GND13" gate="1" x="215.9" y="12.7"/>
 <instance part="J1" gate="G$1" x="-33.02" y="43.18"/>
-<instance part="TPMISO" gate="G$1" x="187.96" y="27.94" rot="R270"/>
-<instance part="TPMOSI" gate="G$1" x="200.66" y="25.4" rot="R90"/>
-<instance part="TPSCK" gate="G$1" x="187.96" y="25.4" rot="R270"/>
+<instance part="TPMISO" gate="G$1" x="175.26" y="27.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="176.53" y="26.67" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="173.99" y="26.67" size="1.778" layer="97" rot="R270"/>
+</instance>
+<instance part="TPMOSI" gate="G$1" x="200.66" y="25.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="199.644" y="25.908" size="1.778" layer="95" rot="R180"/>
+<attribute name="TP_SIGNAL_NAME" x="201.93" y="26.67" size="1.778" layer="97" rot="R90"/>
+</instance>
+<instance part="TPSCK" gate="G$1" x="175.26" y="25.4" smashed="yes" rot="R270">
+<attribute name="NAME" x="176.53" y="24.13" size="1.778" layer="95"/>
+<attribute name="TP_SIGNAL_NAME" x="173.99" y="24.13" size="1.778" layer="97" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8596,8 +8605,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="55.88" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="185.42" y1="22.86" x2="175.26" y2="22.86" width="0.1524" layer="91"/>
-<label x="165.1" y="22.86" size="1.778" layer="95"/>
+<wire x1="172.72" y1="22.86" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
+<label x="152.4" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -8760,8 +8769,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="147.32" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="185.42" y1="27.94" x2="175.26" y2="27.94" width="0.1524" layer="91"/>
-<label x="167.64" y="27.94" size="1.778" layer="95"/>
+<wire x1="172.72" y1="27.94" x2="162.56" y2="27.94" width="0.1524" layer="91"/>
+<label x="154.94" y="27.94" size="1.778" layer="95"/>
 <pinref part="TPMISO" gate="G$1" pin="TP"/>
 </segment>
 </net>
@@ -8772,8 +8781,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="147.32" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="185.42" y1="25.4" x2="175.26" y2="25.4" width="0.1524" layer="91"/>
-<label x="167.64" y="25.4" size="1.778" layer="95"/>
+<wire x1="172.72" y1="25.4" x2="162.56" y2="25.4" width="0.1524" layer="91"/>
+<label x="154.94" y="25.4" size="1.778" layer="95"/>
 <pinref part="TPSCK" gate="G$1" pin="TP"/>
 </segment>
 </net>

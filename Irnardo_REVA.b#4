@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1677,7 +1677,10 @@ design rules under a new name.</description>
 <element name="J1" library="USB_PAD" package="USB_PAD" value="USB_PAD" x="6" y="0" smashed="yes" rot="MR0">
 <attribute name="NAME" x="6.75" y="-1.75" size="1.27" layer="26" rot="MR0"/>
 </element>
-<element name="Q1" library="crystal" package="FA-20H" value="FA-20H" x="1.75" y="4.5" rot="R270"/>
+<element name="Q1" library="crystal" package="FA-20H" value="FA-20H" x="1.75" y="4.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="-1.78" y="5.945" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="-1" y="5.95" size="1.27" layer="27" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="AREF">

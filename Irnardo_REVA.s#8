@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6027,7 +6027,6 @@ Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
 <wire x1="-1.5" y1="-1" x2="-1.5" y2="2" width="0.127" layer="51"/>
 <wire x1="5.3" y1="-1" x2="5.3" y2="2" width="0.127" layer="51"/>
 <wire x1="-1.5" y1="2" x2="5.3" y2="2" width="0.127" layer="51"/>
-<rectangle x1="-0.3" y1="-0.8" x2="0.3" y2="0.8" layer="1"/>
 <text x="-1.27" y="2.54" size="1.27" layer="21">&gt;Name</text>
 <text x="-1.27" y="-2.54" size="1.27" layer="21">&gt;Value</text>
 </package>

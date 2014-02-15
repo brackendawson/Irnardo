@@ -7878,6 +7878,7 @@ Source: Epson Toyocom</description>
 <wire x1="40.64" y1="73.66" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="83.82" x2="35.56" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
+<junction x="40.64" y="73.66"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
@@ -7887,6 +7888,7 @@ Source: Epson Toyocom</description>
 <wire x1="27.94" y1="73.66" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="83.82" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="73.66" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
+<junction x="27.94" y="73.66"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -8117,6 +8119,7 @@ Source: Epson Toyocom</description>
 <wire x1="27.94" y1="88.9" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="27.94" y1="83.82" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
+<junction x="27.94" y="88.9"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -8127,6 +8130,7 @@ Source: Epson Toyocom</description>
 <wire x1="40.64" y1="88.9" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="XTAL1"/>
 <wire x1="40.64" y1="88.9" x2="76.2" y2="88.9" width="0.1524" layer="91"/>
+<junction x="40.64" y="88.9"/>
 </segment>
 </net>
 </nets>

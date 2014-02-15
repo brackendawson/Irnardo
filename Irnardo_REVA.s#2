@@ -368,18 +368,6 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <text x="-3.9" y="4.55" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.9" y="-5.525" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="SMARTPRJ_CRYSTAL-3.2-2.5">
-<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="21"/>
-<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="21"/>
-<smd name="1" x="-1.15" y="-0.925" dx="1.05" dy="1.3" layer="1" rot="R90"/>
-<smd name="2" x="1.15" y="-0.925" dx="1.05" dy="1.3" layer="1" rot="R90"/>
-<smd name="3" x="1.15" y="0.925" dx="1.05" dy="1.3" layer="1" rot="R90"/>
-<smd name="4" x="-1.15" y="0.925" dx="1.05" dy="1.3" layer="1" rot="R90"/>
-<text x="-1.65" y="1.6" size="1.27" layer="25">&gt;name</text>
-<text x="-1.6" y="-2.25" size="1.27" layer="27">&gt;value</text>
-</package>
 </packages>
 <symbols>
 <symbol name="SMARTPRJ_ATMEGA32U4">
@@ -434,31 +422,6 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <pin name="XTAL2" x="-25.4" y="10.16" length="middle"/>
 <text x="-20.32" y="-63.5" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-20.32" y="26.162" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
-<symbol name="SMARTPRJ_CRYSTAL-KX7">
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.778" y1="1.905" x2="-1.778" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="-1.778" y1="2.54" x2="1.778" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="2.54" x2="1.778" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-1.905" x2="1.778" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-1.778" y1="-2.54" x2="1.778" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-1.778" y1="-2.54" x2="-1.778" y2="-1.905" width="0.1524" layer="94"/>
-<pin name="C1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-<pin name="C2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="GND@1" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="GND@2" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
-<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
-<text x="1.143" y="2.794" size="0.8636" layer="93" rot="R90">3</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -618,24 +581,6 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <connect gate="G$1" pin="VCC1" pad="34"/>
 <connect gate="G$1" pin="XTAL1" pad="17"/>
 <connect gate="G$1" pin="XTAL2" pad="16"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SMARTPRJ_CRYSTAL-3.2-2.5" prefix="X">
-<gates>
-<gate name="G$1" symbol="SMARTPRJ_CRYSTAL-KX7" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SMARTPRJ_CRYSTAL-3.2-2.5">
-<connects>
-<connect gate="G$1" pin="C1" pad="1"/>
-<connect gate="G$1" pin="C2" pad="3"/>
-<connect gate="G$1" pin="GND@1" pad="2"/>
-<connect gate="G$1" pin="GND@2" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7622,6 +7567,141 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="crystal">
+<description>&lt;b&gt;Crystals and Crystal Resonators&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="FA-128">
+<description>&lt;b&gt;&lt;b&gt;MHZ RANGE CRYSTASL UNIT&lt;/b&gt;&lt;/b&gt; FA-128&lt;p&gt;
+ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;
+Source: Epson Toyocom FA128.pdf</description>
+<wire x1="-0.9" y1="0.7" x2="0.9" y2="0.7" width="0.2032" layer="51"/>
+<wire x1="0.9" y1="0.7" x2="0.9" y2="-0.7" width="0.2032" layer="51"/>
+<wire x1="0.9" y1="-0.7" x2="-0.9" y2="-0.7" width="0.2032" layer="51"/>
+<wire x1="-0.9" y1="-0.7" x2="-0.9" y2="0.7" width="0.2032" layer="51"/>
+<smd name="1" x="-0.725" y="-0.575" dx="0.95" dy="0.85" layer="1" stop="no" cream="no"/>
+<smd name="2" x="0.725" y="-0.575" dx="0.95" dy="0.85" layer="1" stop="no" cream="no"/>
+<smd name="3" x="0.725" y="0.575" dx="0.95" dy="0.85" layer="1" rot="R180" stop="no" cream="no"/>
+<smd name="4" x="-0.725" y="0.575" dx="0.95" dy="0.85" layer="1" rot="R180" stop="no" cream="no"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.25" y1="0.1" x2="-0.2" y2="1.05" layer="29"/>
+<rectangle x1="0.2" y1="0.1" x2="1.25" y2="1.05" layer="29"/>
+<rectangle x1="-1.25" y1="-1.05" x2="-0.2" y2="-0.1" layer="29"/>
+<rectangle x1="-1.15" y1="0.2" x2="-0.3" y2="0.95" layer="31"/>
+<rectangle x1="0.3" y1="0.2" x2="1.15" y2="0.95" layer="31"/>
+<rectangle x1="-1.15" y1="-0.95" x2="-0.3" y2="-0.2" layer="31"/>
+<polygon width="0.0508" layer="31">
+<vertex x="0.325" y="-0.475"/>
+<vertex x="0.575" y="-0.225"/>
+<vertex x="1.125" y="-0.225"/>
+<vertex x="1.125" y="-0.925"/>
+<vertex x="0.325" y="-0.925"/>
+</polygon>
+<polygon width="0.0508" layer="29">
+<vertex x="0.225" y="-1.025"/>
+<vertex x="0.225" y="-0.45"/>
+<vertex x="0.55" y="-0.125"/>
+<vertex x="1.225" y="-0.125"/>
+<vertex x="1.225" y="-1.025"/>
+</polygon>
+</package>
+<package name="FA-20H">
+<description>&lt;b&gt;MHZ RANGE CRYSTASL UNIT&lt;/b&gt; FA-20H&lt;p&gt;
+ULTRA MINIATURE SIZE LOW PROFILE SMD&lt;br&gt;
+Source: Epson Toyocom FA-20H.pdf</description>
+<wire x1="-1.15" y1="0.9" x2="1.15" y2="0.9" width="0.2032" layer="51"/>
+<wire x1="1.15" y1="0.9" x2="1.15" y2="-0.9" width="0.2032" layer="51"/>
+<wire x1="1.15" y1="-0.9" x2="-1.15" y2="-0.9" width="0.2032" layer="51"/>
+<wire x1="-1.15" y1="-0.9" x2="-1.15" y2="0.9" width="0.2032" layer="51"/>
+<smd name="1" x="-0.85" y="-0.7" dx="1.2" dy="1.1" layer="1" stop="no" cream="no"/>
+<smd name="2" x="0.85" y="-0.7" dx="1.2" dy="1.1" layer="1" stop="no" cream="no"/>
+<smd name="3" x="0.85" y="0.7" dx="1.2" dy="1.1" layer="1" rot="R180" stop="no" cream="no"/>
+<smd name="4" x="-0.85" y="0.7" dx="1.2" dy="1.1" layer="1" rot="R180" stop="no" cream="no"/>
+<text x="-1.445" y="1.47" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.45" y="-2.75" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.5" y1="0.1" x2="-0.2" y2="1.3" layer="29"/>
+<rectangle x1="0.2" y1="0.1" x2="1.5" y2="1.3" layer="29"/>
+<rectangle x1="-1.5" y1="-1.3" x2="-0.2" y2="-0.1" layer="29"/>
+<rectangle x1="-1.4" y1="0.2" x2="-0.3" y2="1.2" layer="31"/>
+<rectangle x1="0.3" y1="0.2" x2="1.4" y2="1.2" layer="31"/>
+<rectangle x1="-1.4" y1="-1.2" x2="-0.3" y2="-0.2" layer="31"/>
+<polygon width="0.0508" layer="31">
+<vertex x="0.325" y="-0.475"/>
+<vertex x="0.575" y="-0.225"/>
+<vertex x="1.375" y="-0.225"/>
+<vertex x="1.375" y="-1.175"/>
+<vertex x="0.325" y="-1.175"/>
+</polygon>
+<polygon width="0.0508" layer="29">
+<vertex x="0.225" y="-1.275"/>
+<vertex x="0.225" y="-0.45"/>
+<vertex x="0.55" y="-0.125"/>
+<vertex x="1.475" y="-0.125"/>
+<vertex x="1.475" y="-1.275"/>
+</polygon>
+</package>
+</packages>
+<symbols>
+<symbol name="Q-SHIELD2">
+<wire x1="2.286" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0.254" y2="0" width="0.1524" layer="94"/>
+<wire x1="0.889" y1="1.524" x2="0.889" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.889" y1="-1.524" x2="1.651" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="1.651" y1="-1.524" x2="1.651" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.651" y1="1.524" x2="0.889" y2="1.524" width="0.254" layer="94"/>
+<wire x1="2.286" y1="1.778" x2="2.286" y2="0" width="0.254" layer="94"/>
+<wire x1="2.286" y1="0" x2="2.286" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0.254" y1="1.778" x2="0.254" y2="0" width="0.254" layer="94"/>
+<wire x1="0.254" y1="0" x2="0.254" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="1.905" x2="-1.778" y2="2.54" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-1.778" y1="2.54" x2="4.318" y2="2.54" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="4.318" y1="2.54" x2="4.318" y2="1.905" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="4.318" y1="-1.905" x2="4.318" y2="-2.54" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-1.778" y1="-2.54" x2="4.318" y2="-2.54" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-1.778" y1="-2.54" x2="-1.778" y2="-1.905" width="0.1524" layer="94" style="shortdash"/>
+<text x="-2.54" y="6.096" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="3" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="4" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FA-" prefix="Q">
+<description>&lt;b&gt;MHz RANGE CRYSTAL UNIT&lt;/b&gt; &lt;p&gt;
+Source: Epson Toyocom</description>
+<gates>
+<gate name="G$1" symbol="Q-SHIELD2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="128" package="FA-128">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="20H" package="FA-20H">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7640,7 +7720,6 @@ Source: www.kingbright.com</description>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="X1" library="Arduino_Leonardo-REV3b" deviceset="SMARTPRJ_CRYSTAL-3.2-2.5" device="" value="16MHz"/>
 <part name="C3" library="resistor" deviceset="C-EU" device="C0402" value="22p"/>
 <part name="C4" library="resistor" deviceset="C-EU" device="C0402" value="22p"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -7669,6 +7748,7 @@ Source: www.kingbright.com</description>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="USB_PAD" deviceset="USB_PAD" device=""/>
+<part name="Q1" library="crystal" deviceset="FA-" device="20H"/>
 </parts>
 <sheets>
 <sheet>
@@ -7685,18 +7765,17 @@ Source: www.kingbright.com</description>
 <instances>
 <instance part="U1" gate="G$1" x="101.6" y="83.82"/>
 <instance part="P+1" gate="1" x="25.4" y="116.84"/>
-<instance part="GND1" gate="1" x="25.4" y="88.9"/>
+<instance part="GND1" gate="1" x="15.24" y="86.36"/>
 <instance part="R1" gate="G$1" x="58.42" y="109.22"/>
 <instance part="C1" gate="G$1" x="15.24" y="101.6"/>
 <instance part="P+3" gate="1" x="50.8" y="78.74"/>
 <instance part="GND3" gate="1" x="45.72" y="55.88"/>
 <instance part="GND4" gate="1" x="68.58" y="25.4"/>
-<instance part="X1" gate="G$1" x="35.56" y="88.9" rot="R180"/>
-<instance part="C3" gate="G$1" x="40.64" y="83.82"/>
-<instance part="C4" gate="G$1" x="30.48" y="83.82"/>
-<instance part="GND2" gate="1" x="40.64" y="71.12"/>
+<instance part="C3" gate="G$1" x="40.64" y="81.28"/>
+<instance part="C4" gate="G$1" x="27.94" y="81.28"/>
+<instance part="GND2" gate="1" x="40.64" y="68.58"/>
 <instance part="C2" gate="G$1" x="5.08" y="101.6"/>
-<instance part="GND5" gate="1" x="30.48" y="71.12"/>
+<instance part="GND5" gate="1" x="27.94" y="68.58"/>
 <instance part="R3" gate="G$1" x="-12.7" y="45.72"/>
 <instance part="R4" gate="G$1" x="-12.7" y="38.1"/>
 <instance part="P+2" gate="1" x="2.54" y="58.42"/>
@@ -7720,6 +7799,7 @@ Source: www.kingbright.com</description>
 <instance part="P+5" gate="1" x="215.9" y="38.1"/>
 <instance part="GND13" gate="1" x="215.9" y="12.7"/>
 <instance part="J1" gate="G$1" x="-33.02" y="43.18"/>
+<instance part="Q1" gate="G$1" x="33.02" y="88.9"/>
 </instances>
 <busses>
 </busses>
@@ -7781,21 +7861,6 @@ Source: www.kingbright.com</description>
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="GND3"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="76.2" y1="104.14" x2="25.4" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="104.14" x2="25.4" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="93.98" x2="25.4" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="96.52" x2="15.24" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="93.98" x2="25.4" y2="93.98" width="0.1524" layer="91"/>
-<junction x="25.4" y="93.98"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="96.52" x2="5.08" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="93.98" x2="15.24" y2="93.98" width="0.1524" layer="91"/>
-<junction x="15.24" y="93.98"/>
-</segment>
-<segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="45.72" y1="71.12" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="GND1"/>
@@ -7818,22 +7883,20 @@ Source: www.kingbright.com</description>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="78.74" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="GND@2"/>
 <wire x1="40.64" y1="76.2" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="83.82" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="76.2" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="76.2" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="76.2" x2="45.72" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="96.52" x2="35.56" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="GND@1"/>
-<wire x1="35.56" y1="96.52" x2="35.56" y2="93.98" width="0.1524" layer="91"/>
-<junction x="40.64" y="76.2"/>
+<pinref part="Q1" gate="G$1" pin="4"/>
+<wire x1="40.64" y1="73.66" x2="40.64" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="83.82" x2="35.56" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="73.66" x2="40.64" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="78.74" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="76.2" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="Q1" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="73.66" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="83.82" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="73.66" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -7880,6 +7943,20 @@ Source: www.kingbright.com</description>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="215.9" y1="22.86" x2="215.9" y2="15.24" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND3"/>
+<wire x1="76.2" y1="104.14" x2="25.4" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="104.14" x2="25.4" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="96.52" x2="15.24" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="93.98" x2="25.4" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="96.52" x2="5.08" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="93.98" x2="15.24" y2="93.98" width="0.1524" layer="91"/>
+<junction x="15.24" y="93.98"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="15.24" y1="88.9" x2="15.24" y2="93.98" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RESET" class="0">
 <segment>
@@ -7895,31 +7972,6 @@ Source: www.kingbright.com</description>
 <segment>
 <wire x1="172.72" y1="22.86" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
 <label x="152.4" y="22.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="XTAL1"/>
-<pinref part="X1" gate="G$1" pin="C1"/>
-<wire x1="76.2" y1="88.9" x2="40.64" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="88.9" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="86.36" x2="40.64" y2="88.9" width="0.1524" layer="91"/>
-<junction x="40.64" y="88.9"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="XTAL2"/>
-<wire x1="76.2" y1="93.98" x2="48.26" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="93.98" x2="48.26" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="99.06" x2="30.48" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="99.06" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="X1" gate="G$1" pin="C2"/>
-<pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="88.9" x2="33.02" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="86.36" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
-<junction x="30.48" y="88.9"/>
 </segment>
 </net>
 <net name="RD-" class="0">
@@ -8085,6 +8137,27 @@ Source: www.kingbright.com</description>
 <segment>
 <wire x1="203.2" y1="25.4" x2="215.9" y2="25.4" width="0.1524" layer="91"/>
 <label x="215.9" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="XTAL2"/>
+<wire x1="76.2" y1="93.98" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="93.98" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="88.9" x2="30.48" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="83.82" x2="27.94" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="83.82" x2="40.64" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="3"/>
+<wire x1="40.64" y1="88.9" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="XTAL1"/>
+<wire x1="40.64" y1="88.9" x2="76.2" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
